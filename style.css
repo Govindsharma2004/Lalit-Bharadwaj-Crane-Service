@@ -1,0 +1,244 @@
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
+  color: #333;
+}
+
+header {
+  background: #002244e6;
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+
+nav {
+  background: #002244;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  color: #fff;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+li {
+  font-size: 25px;
+}
+
+.hero {
+  background: url('') center/cover no-repeat;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.cta-button {
+  background: #e67e22;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background: #d35400;
+}
+.contun {
+  padding: 20px 20px;
+  margin: auto;
+}
+
+h2, h3 {
+  color: #003366;
+}
+
+footer {
+  background: #002244;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: #25D366;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp img {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+/* Mobile-specific tweaks */
+@media (max-width: 480px) {
+  .whatsapp {
+    bottom: 15px;
+    right: 15px;
+    padding: 8px;
+  }
+
+  .whatsapp img {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+
+.monu{
+    display: flex;
+    font-size: 20px;
+    padding: 10px;
+}
+
+/* Gallery */
+.gov {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.gov > div {
+  flex: 0 0 calc(33.333% - 20px);
+  box-sizing: border-box;
+}
+
+.gov img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  -webkit-transition: transform 0.3s ease;
+  -moz-transition: transform 0.3s ease;
+  -ms-transition: transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+}
+
+.gov img:hover {
+  transform: scale(1.03);
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .gov > div {
+    flex: 0 0 calc(50% - 20px);
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .gov > div {
+    flex: 0 0 100%;
+  }
+}
+
+/* Form */
+.form-section {
+  background: #f4f7f9;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-box {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.form-box h2 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 25px;
+}
+
+.form-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-box input,
+.form-box textarea {
+  padding: 12px 15px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.form-box button {
+  background-color: #25d366;
+  color: white;
+  padding: 12px;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-box button:hover {
+  background-color: #1ebd5d;
+}
+
+/* Desktop (default) */
+.monu {
+  display: flex;
+  font-size: 20px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mobile view - stack vertically with image first */
+@media (max-width: 768px) {
+  .monu {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .monu img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+
+  .monu > div:last-child {
+    margin: 20px 10px 0;
+    font-size: 16px;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .lalit {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    gap: 15px;
+  }
+}
